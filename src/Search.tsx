@@ -21,7 +21,7 @@ function Search () {
           <form className="App-search-form" onSubmit={handleSearch}>
             <input
               className="App-input-search"
-              type="search"
+              type="text"
               name="App-input-search"
               id="App-input-search"
               ref={searchInput}
