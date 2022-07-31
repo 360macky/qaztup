@@ -79,6 +79,18 @@
   margin: 0;
   border-radius: 2rem 0 0 2rem;
   width: 420px;
+  outline-style: none;
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+.App-input-search:focus {
+  box-shadow: 0px 0px 0.5rem 0px var(--skyblue);
+}
+
+.App-input-search:focus + .App-input-submit {
+  box-shadow: 0px 0px 0.5rem 0px var(--skyblue);
 }
 
 .App-input-submit {
@@ -91,6 +103,9 @@
   border-radius: 0 2rem 2rem 0;
   font-weight: 600;
   color: #ffffff;
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 
 .App-search-form {
