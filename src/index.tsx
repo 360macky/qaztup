@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import Search from './Search'
+import DirectSearch from './DirectSearch'
 import PageNotFound from './PageNotFound'
 
 import reportWebVitals from './reportWebVitals'
@@ -21,6 +22,7 @@ root.render(
       <Routes>
       <Route path="/" element={<App />} />
       <Route path="/search" element={<Search />} />
+      <Route path="/query/:query" element={<DirectSearch />} />
       <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
