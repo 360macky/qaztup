@@ -20,8 +20,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/search" element={<Search />} />
+      <Route path="/about" element={<App />} />
+      <Route path="/" element={<Search />} />
       <Route path="/query/:query" element={<DirectSearch />} />
       <Route path="*" element={<PageNotFound />} />
       </Routes>
